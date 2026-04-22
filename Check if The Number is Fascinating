@@ -1,0 +1,9 @@
+class Solution {
+    public boolean isFascinating(int n) {
+        String n1=Integer.toString(n)+Integer.toString(2*n)+Integer.toString(3*n);
+        char[] chars = n1.toCharArray();
+        Arrays.sort(chars);
+        String sorted = new String(chars);
+        return sorted.equals("123456789");
+    }
+}
